@@ -112,7 +112,7 @@ export default function Dashboard() {
               <div className="flex items-center justify-between px-3 pb-2 pt-1">
                 <div className="flex items-center gap-1.5 text-xs text-ink-muted">
                   <Sparkles size={13} className="text-gold" />
-                  Planner &middot; Researcher &middot; Validator &middot; Report agent
+                  Planner &middot; Researcher &middot; Validator &middot; Report
                 </div>
 
                 <motion.button
