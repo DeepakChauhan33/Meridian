@@ -32,7 +32,7 @@ export default function Shell({ children }) {
   };
 
   return (
-    <div className="min-h-screen bg-surface">
+    <div className="flex min-h-screen flex-col bg-surface">
       {/* Header */}
       <motion.header
         initial={{ opacity: 0, y: -15 }}
@@ -176,7 +176,7 @@ export default function Shell({ children }) {
 
       {/* Page content */}
       <motion.main
-        className="w-screen h-screen"
+        className="flex-1 "
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
