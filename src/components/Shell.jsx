@@ -176,7 +176,7 @@ export default function Shell({ children }) {
 
       {/* Page content */}
       <motion.main
-        className="w-screen "
+        className="w-screen h-screen"
         initial={{ opacity: 0, y: 12 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
