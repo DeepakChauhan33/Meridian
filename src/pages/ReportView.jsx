@@ -244,14 +244,14 @@ export default function ReportView() {
                 )}
                 {evidence.map((e) => (
                   <div key={e.id} className="rounded-lg border border-line bg-surface p-4">
-                    <p className="text-[15px] leading-relaxed text-ink">COMPLETED</p>
+                    <p className="text-[15px] leading-relaxed text-ink">{e.claim}</p>
                     {e.quote && (
                       <p className="mt-2 border-l-2 border-line pl-3 text-sm italic leading-relaxed text-ink-muted">
                         &ldquo;{e.quote}&rdquo;
                       </p>
                     )}
                     <div className="mt-3 flex flex-wrap items-center gap-2 font-mono text-[10px] uppercase tracking-wide text-ink-muted">
-                      {e.status && <span className="rounded-full bg-paper-dim text-[11px] font-medium px-2 py-0.5">{e.status}</span>}
+                      {e.status && <span className="rounded-full bg-paper-dim text-[11px] font-medium px-2 py-0.5">COMPLETED</span>}
                       {typeof e.confidence === "number" && (
                         <span className={`rounded-full text-[11px] font-medium bg-paper-dim px-2 py-0.5 ${theme == "dark" ? "text-[#323232]" : "text-ink"} `}>
                           Confidence {(e.confidence * 100).toFixed(0)}%
