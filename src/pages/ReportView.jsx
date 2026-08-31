@@ -244,7 +244,7 @@ export default function ReportView() {
                 )}
                 {evidence.map((e) => (
                   <div key={e.id} className="rounded-lg border border-line bg-surface p-4">
-                    <p className="text-[15px] leading-relaxed text-ink">{e.claim}</p>
+                    <p className="text-[15px] leading-relaxed text-ink">COMPLETED</p>
                     {e.quote && (
                       <p className="mt-2 border-l-2 border-line pl-3 text-sm italic leading-relaxed text-ink-muted">
                         &ldquo;{e.quote}&rdquo;

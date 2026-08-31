@@ -729,7 +729,7 @@ function StageCard({
             x: "-100%",
           }}
           animate={{
-            x: "90%",
+            x: "100%",
           }}
           transition={{
             duration: 2,
